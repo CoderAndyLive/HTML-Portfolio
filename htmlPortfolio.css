@@ -1,0 +1,305 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #fff;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --highlight-color: #e7e7e7;
+    --font-family: 'Roboto', Arial, sans-serif;
+    --transition-duration: 0.3s;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    animation: fadeIn 1s ease-in-out;
+    scroll-behavior: smooth;
+    background-image: url('./futuristic-green-backdrop-with-luminous-geometric-shapes-focused-technology-themes_548264-63750.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    animation: slideDown 1s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: text-decoration var(--transition-duration) ease, color var(--transition-duration) ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: var(--highlight-color);
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    background-color: var(--secondary-color);
+    box-shadow: var(--box-shadow);
+    transition: transform var(--transition-duration) ease, box-shadow var(--transition-duration) ease;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+section#about {
+    text-align: center;
+}
+
+section#about img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform var(--transition-duration) ease;
+}
+
+section#about img:hover {
+    transform: rotate(360deg);
+}
+
+section h2 {
+    color: var(--primary-color);
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    background-color: var(--highlight-color);
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border-radius: 5px;
+    transition: background-color var(--transition-duration) ease, transform var(--transition-duration) ease;
+}
+
+section ul li:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transform: translateX(10px);
+}
+
+section#contact p {
+    margin: 0.5rem 0;
+}
+
+section#contact a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: text-decoration var(--transition-duration) ease, color var(--transition-duration) ease;
+}
+
+section#contact a:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+form {
+    background-color: var(--highlight-color);
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    margin-top: 1rem;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.25rem;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color var(--transition-duration) ease;
+}
+
+form button:hover {
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 1.5rem;
+        margin: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.75rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.75rem 0;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    section {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section ul li {
+        padding: 0.5rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    form input, form textarea, form button {
+        padding: 0.5rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+.project-box {
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transition: transform var(--transition-duration) ease, box-shadow var(--transition-duration) ease;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-box h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.project-box p {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.project-box .button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.75rem 1.5rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease;
+}
+
+.project-box .button:hover {
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+}
+body.dark-mode {
+    --primary-color: #333;
+    --secondary-color: #fff;
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --highlight-color: #1e1e1e;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
