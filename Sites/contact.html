@@ -3,11 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Andrew Nguyen</title>
-    <link rel="stylesheet" href="../htmlPortfolio.css">
+    <meta name="description" content="Andrew Nguyen's personal portfolio website. Learn more about Andrew's skills, education, language proficiency, references, and hobbies.">
+    <meta name="keywords" content="Andrew Nguyen, portfolio, software developer, IT specialist, skills, education, references, hobbies">
+    <meta name="author" content="Andrew Nguyen">
+    <title data-translate="title">Contact - Andrew Nguyen</title>
+    <link rel="stylesheet" href="../CSS/htmlPortfolio.css">
     <link rel="icon" href="../Images/pfp.png">
-    <script src="https://www.google.com/recaptcha/api.js?render=YOUR_SITE_KEY"></script>
     <script src="../darkmode.js" defer></script>
+    <script src="../translation.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../Sites/htmlPortfolio.html" data-translate="nav_home">Home</a></li>
+                <li><a href="../Sites/aboutMe.html" data-translate="nav_about">About Me</a></li>
+                <li><a href="../Sites/skills.html" data-translate="nav_skills">Skills</a></li>
+                <li><a href="../Sites/projects.html" data-translate="nav_projects">Projects</a></li>
+                <li><a href="../Sites/contact.html" data-translate="nav_contact">Contact</a></li>
+                <li>
+                    <button onclick="setLanguage('en')" style="background-color: transparent; color: #fff; border: 1px solid #fff; padding: 5px 10px; cursor: pointer; margin-right: 5px; border-radius: 5px;">EN</button>
+                    <button onclick="setLanguage('de')" style="background-color: transparent; color: #fff; border: 1px solid #fff; padding: 5px 10px; cursor: pointer; border-radius: 5px;">DE</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contact">
+        <h2 data-translate="contact_title">Contact</h2>
+        <p data-translate="contact_intro">Interested in me? Then reach out!</p>
+        <form action="../contactForm.php" method="post">
+            <label for="name" data-translate="contact_name_label">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email" data-translate="contact_email_label">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="message" data-translate="contact_message_label">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+            
+            <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+            
+            <button type="submit" data-translate="contact_send_button">Send</button>
+        </form>
+    </section>
+    <footer>
+        &copy; 2024 Andrew Nguyen. All rights reserved. |
+        <a href="../Sites/dataprotection.html" style="color: white; text-decoration: underline; margin-left: 10px;" data-translate="data_protection">Data Protection</a>
+        <button id="theme-toggle" style="position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; border: none; background-color: #333; color: #fff; font-size: 24px; cursor: pointer;" title="Toggle Dark Mode">🌙</button>
+    </footer>
     <script>
         grecaptcha.ready(function() {
             grecaptcha.execute('6LcnRm8qAAAAADLuEK-ZSy-icD2Dg9Zj9xHlyJPG', {action: 'submit'}).then(function(token) {
@@ -15,41 +58,5 @@
             });
         });
     </script>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../Sites/htmlPortfolio.html">Home</a></li>
-                <li><a href="../Sites/aboutMe.html">About Me</a></li>
-                <li><a href="../Sites/skills.html">Skills</a></li>
-                <li><a href="../Sites/projects.html">Projects</a></li>
-                <li><a href="../Sites/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Interested in me? Then reach out!</p>
-        <form action="../contactForm.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
-            
-            <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
-            
-            <button type="submit">Send</button>
-        </form>
-    </section>
-    <footer>
-        &copy; 2024 Andrew Nguyen. All rights reserved. |
-        <a href="../Sites/dataprotection.html" style="color: white; text-decoration: underline; margin-left: 10px;">Data Protection</a>
-        <button id="theme-toggle" style="position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; border: none; background-color: #333; color: #fff; font-size: 24px; cursor: pointer;" title="Toggle Dark Mode">🌙</button>
-    </footer>
 </body>
 </html>

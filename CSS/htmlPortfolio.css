@@ -17,7 +17,7 @@ body {
     color: var(--text-color);
     animation: fadeIn 1s ease-in-out;
     scroll-behavior: smooth;
-    background-image: url('./futuristic-green-backdrop-with-luminous-geometric-shapes-focused-technology-themes_548264-63750.avif');
+    background-image: url('../Images/futuristic-green-backdrop-with-luminous-geometric-shapes-focused-technology-themes_548264-63750.avif');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
