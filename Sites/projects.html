@@ -3,59 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Andrew Nguyen</title>
+    <meta name="description" content="Andrew Nguyen's personal portfolio website. Learn more about Andrew's projects and experience.">
+    <meta name="keywords" content="Andrew Nguyen, portfolio, projects, web development, software engineer">
+    <meta name="author" content="Andrew Nguyen">
+    <title data-translate="projects_title">Projects - Andrew Nguyen</title>
     <link rel="stylesheet" href="../CSS/htmlPortfolio.css">
     <link rel="icon" href="../Images/pfp.png">
-    <script src="../darkmode.js" defer></script>
+    <script src="../Javascript/darkmode.js" defer></script>
+    <script src="../Javascript/translation.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="../Sites/htmlPortfolio.html">Home</a></li>
-                <li><a href="../Sites/aboutMe.html">About Me</a></li>
-                <li><a href="../Sites/skills.html">Skills</a></li>
-                <li><a href="../Sites/projects.html">Projects</a></li>
-                <li><a href="../Sites/contact.html">Contact</a></li>
+                <li><a href="../Sites/htmlPortfolio.html" data-translate="nav_home">Home</a></li>
+                <li><a href="../Sites/aboutMe.html" data-translate="nav_about">About Me</a></li>
+                <li><a href="../Sites/skills.html" data-translate="nav_skills">Skills</a></li>
+                <li><a href="../Sites/projects.html" data-translate="nav_projects">Projects</a></li>
+                <li><a href="../Sites/contact.html" data-translate="nav_contact">Contact</a></li>
+                <li>
+                    <button onclick="setLanguage('en')" style="background-color: transparent; color: #fff; border: 1px solid #fff; padding: 5px 10px; cursor: pointer; margin-right: 5px; border-radius: 5px;">EN</button>
+                    <button onclick="setLanguage('de')" style="background-color: transparent; color: #fff; border: 1px solid #fff; padding: 5px 10px; cursor: pointer; border-radius: 5px;">DE</button>
+                </li>
             </ul>
         </nav>
     </header>
     <section id="projects">
-        <h1>Projects</h1>
+        <h1 data-translate="projects_title">Projects</h1>
         <div class="project-box">
-            <h2>Project 1: Development of an Interactive Admission Form</h2>
-            <p>This project involved creating an interactive admission form for the fictional health insurance company "Helthi". The goal was to develop a user-friendly form that captures the relevant data of new customers and displays this data for further processing.</p>
-            <a class="button" href="https://github.com/CoderAndyLive/catchTheButton" target="_blank">View on GitHub</a>
-            <a class="button" href="../Projects/helthi.zip" download>Download Project</a>
+            <h2 data-translate="project1_title">Project 1: Development of an Interactive Admission Form</h2>
+            <p data-translate="project1_description">This project involved creating an interactive admission form for the fictional health insurance company "Helthi". The goal was to develop a user-friendly form that captures the relevant data of new customers and displays this data for further processing.</p>
+            <a class="button" href="https://github.com/CoderAndyLive/catchTheButton" target="_blank" data-translate="view_on_github">View on GitHub</a>
+            <a class="button" href="../Projects/helthi.zip" download data-translate="download_project">Download Project</a>
         </div>
         <div class="project-box">
-            <h2>Project 2: Development of a Pizza CMS with Laravel</h2>
-            <p>In this project, I developed a Pizza Content Management System (CMS) from scratch using Laravel. The challenge was to implement the given functionalities (display, creation, editing, and deletion of pizzas) with a framework that was previously unknown to me.</p>
-            <a class="button" href="https://github.com/CoderAndyLive/Pizza-CMS" target="_blank">View on GitHub</a>
-            <a class="button" href="../Projects/CMS_Pizza2.zip" download>Download Project</a>
+            <h2 data-translate="project2_title">Project 2: Development of a Pizza CMS with Laravel</h2>
+            <p data-translate="project2_description">In this project, I developed a Pizza Content Management System (CMS) from scratch using Laravel. The challenge was to implement the given functionalities (display, creation, editing, and deletion of pizzas) with a framework that was previously unknown to me.</p>
+            <a class="button" href="https://github.com/CoderAndyLive/Pizza-CMS" target="_blank" data-translate="view_on_github">View on GitHub</a>
+            <a class="button" href="../Projects/CMS_Pizza2.zip" download data-translate="download_project">Download Project</a>
         </div>
         <div class="project-box">
-            <h2>Project 3: Development of the Mini-Game "catchTheButton"</h2>
-            <p>This project involved developing a small interactive game called "catchTheButton". The goal was to program a game where the user tries to click a button that moves on mouseover.</p>
-            <a class="button" href="https://github.com/CoderAndyLive/catchTheButton" target="_blank">View on GitHub</a>
-            <a class="button" href="../Projects/catchTheButton.zip" download>Download Project</a>
+            <h2 data-translate="project3_title">Project 3: Development of the Mini-Game "catchTheButton"</h2>
+            <p data-translate="project3_description">This project involved developing a small interactive game called "catchTheButton". The goal was to program a game where the user tries to click a button that moves on mouseover.</p>
+            <a class="button" href="https://github.com/CoderAndyLive/catchTheButton" target="_blank" data-translate="view_on_github">View on GitHub</a>
+            <a class="button" href="../Projects/catchTheButton.zip" download data-translate="download_project">Download Project</a>
         </div>
         <div class="project-box">
-            <h2>Project 4: Interactive Word Unscramble Game</h2>
-            <p>This interactive word unscramble game, built with JavaScript, challenges players to decipher scrambled words while offering a "reshuffle" option for an added layer of fun.</p>
-            <a class="button" href="https://github.com/CoderAndyLive/Word-Guessing-Game" target="_blank">View on GitHub</a>
-            <a class="button" href="../Projects/Word-Guessing-Game-main.zip" download>Download Project</a>
+            <h2 data-translate="project4_title">Project 4: Interactive Word Unscramble Game</h2>
+            <p data-translate="project4_description">This interactive word unscramble game, built with JavaScript, challenges players to decipher scrambled words while offering a "reshuffle" option for an added layer of fun.</p>
+            <a class="button" href="https://github.com/CoderAndyLive/Word-Guessing-Game" target="_blank" data-translate="view_on_github">View on GitHub</a>
+            <a class="button" href="../Projects/Word-Guessing-Game-main.zip" download data-translate="download_project">Download Project</a>
         </div>
         <div class="project-box">
-            <h2>Project 5: React Native Todo List</h2>
-            <p>A simple yet functional React Native todo list with features like adding, editing, deleting, and a clean blue theme. Simply clone the repository to your device, run <code>npm install</code>, and <code>npx expo start</code>. The mini app is built around the Expo Go App Version 50, so make sure you have the correct version installed.</p>
-            <a class="button" href="https://github.com/CoderAndyLive/Andys-Mini-Todo-App-Blue" target="_blank">View on GitHub</a>
-            <a class="button" href="../Projects/Andys-Mini-Todo-App-Blue-main.zip" download>Download Project</a>
+            <h2 data-translate="project5_title">Project 5: React Native Todo List</h2>
+            <p data-translate="project5_description">A simple yet functional React Native todo list with features like adding, editing, deleting, and a clean blue theme. Simply clone the repository to your device, run <code>npm install</code>, and <code>npx expo start</code>. The mini app is built around the Expo Go App Version 50, so make sure you have the correct version installed.</p>
+            <a class="button" href="https://github.com/CoderAndyLive/Andys-Mini-Todo-App-Blue" target="_blank" data-translate="view_on_github">View on GitHub</a>
+            <a class="button" href="../Projects/Andys-Mini-Todo-App-Blue.zip" download data-translate="download_project">Download Project</a>
         </div>
     </section>
     <footer>
         &copy; 2024 Andrew Nguyen. All rights reserved. |
-        <a href="../Sites/dataprotection.html" style="color: white; text-decoration: underline; margin-left: 10px;">Data Protection</a>
+        <a href="../Sites/dataprotection.html" style="color: white; text-decoration: underline; margin-left: 10px;" data-translate="data_protection">Data Protection</a>
         <button id="theme-toggle" style="position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; border: none; background-color: #333; color: #fff; font-size: 24px; cursor: pointer;" title="Toggle Dark Mode">🌙</button>
     </footer>
 </body>
