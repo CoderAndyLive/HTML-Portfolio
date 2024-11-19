@@ -84,6 +84,7 @@ section#about img {
     height: 150px;
     object-fit: cover;
     transition: transform var(--transition-duration) ease;
+    background-image: url('../Images/optimized-profile-picture.jpg'); /* Use an optimized image */
 }
 
 section#about img:hover {
@@ -113,6 +114,17 @@ section ul li:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     transform: translateX(10px);
+}
+
+section ul li a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color var(--transition-duration) ease;
+}
+
+section ul li a:hover {
+    color: var(--highlight-color);
 }
 
 section#contact p {
@@ -218,7 +230,7 @@ form button:hover {
         opacity: 0;
     }
     to {
-        opacity: 0.5;
+        opacity: 1;
     }
 }
 
@@ -303,3 +315,5 @@ body.dark-mode {
     --highlight-color: #1e1e1e;
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
+
+/* Note: Ensure ReCaptcha is included in your Data Protection Policy */
